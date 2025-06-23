@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+    nav {
+      background: #222;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 30px;
+    }
+    .nav-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+    }
+    .nav-list a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+    }
+    .nav-list a:hover, .active {
+      background: #3498db;
+    }
+    header {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 40px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .typing-container {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid white;
+      font-size: 28px;
+      animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: white }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    .profile-img {
+      float: right;
+      width: 160px;
+      border-radius: 10px;
+      margin-left: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    @media (max-width: 768px) {
+      .nav-list {
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About Me</a></li>
+    <li><a href="what-i-do.html">What I Do</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="typing-container">Hi, I'm [Romeo Mondol]</div>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <img src="profile.jpg" alt="My Photo" class="profile-img" />
+    <p>
+      I am a passionate <strong>Cybersecurity Expert</strong> and certified <strong>Network Administrator</strong> with a solid foundation in securing systems, analyzing vulnerabilities, and managing enterprise networks. I specialize in detecting, preventing, and responding to cyber threats — while ensuring networks stay up, fast, and protected.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Core Skills & Specializations</h2>
+    <ul>
+      <li>🔐 Network Security & Firewall Configuration</li>
+      <li>💻 Vulnerability Assessment (Kali Linux, Nmap)</li>
+      <li>📶 LAN/WAN Design, Configuration & Troubleshooting (Cisco, MikroTik)</li>
+      <li>🔎 Packet Sniffing & Traffic Analysis (Wireshark)</li>
+      <li>🛡 Incident Response & Threat Intelligence</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>📜 CompTIA Security+ (In Progress / Completed)</li>
+      <li>📜 Cisco Certified Network Associate (CCNA)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Tools I Use</h2>
+    <ul>
+      <li>🛠 Kali Linux, Parrot OS, Windows Server</li>
+      <li>🧰 Wireshark, Nessus, Metasploit</li>
+      <li>📡 Cisco Packet Tracer, GNS3, VirtualBox</li>
+      <li>📂 GitHub, VS Code, Linux terminal, Bash scripts</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Soft Skills</h2>
+    <ul>
+      <li>✅ Strong analytical and troubleshooting skills</li>
+      <li>✅ Attention to detail & critical thinking</li>
+      <li>✅ Team collaboration & clear communication</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

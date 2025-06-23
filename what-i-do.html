@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What I Do</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+    nav {
+      background: #222;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 30px;
+    }
+    .nav-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+    }
+    .nav-list a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+    }
+    .nav-list a:hover, .active {
+      background: #3498db;
+    }
+    header {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 40px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 18px rgba(0,0,0,0.1);
+    }
+    .service h3 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+    .service p {
+      font-size: 0.95rem;
+    }
+    @media (max-width: 768px) {
+      .nav-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="what-i-do.html" class="active">What I Do</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>What I Do</h1>
+</header>
+
+<section class="services">
+
+  <div class="service">
+    <h3>Network Administration</h3>
+    <p>Designing, configuring, and maintaining LAN/WAN networks, routers, switches, and firewalls using Cisco, MikroTik, and Ubiquiti tools.</p>
+  </div>
+
+  <div class="service">
+    <h3>Penetration Testing</h3>
+    <p>Conducting vulnerability scans and simulated attacks using Kali Linux tools like Nmap, Metasploit, and Burp Suite.</p>
+  </div>
+
+  <div class="service">
+    <h3>Cybersecurity Hardening</h3>
+    <p>Securing endpoints, web servers, and cloud services against threats through firewall policies, encryption, and system audits.</p>
+  </div>
+
+  <div class="service">
+    <h3>Packet Analysis</h3>
+    <p>Analyzing live network traffic and PCAP files using Wireshark and tcpdump to detect anomalies and prevent data leakage.</p>
+  </div>
+
+  <div class="service">
+    <h3>Security Awareness Training</h3>
+    <p>Educating clients and teams on password hygiene, phishing attacks, and safe browsing to build a human firewall.</p>
+  </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - My Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+    nav { background: #222; padding: 12px; border-radius: 6px; margin-bottom: 30px; }
+    .nav-list { display: flex; justify-content: center; gap: 20px; list-style: none; }
+    .nav-list a {
+      color: white; text-decoration: none;
+      padding: 8px 14px; border-radius: 4px;
+    }
+    .nav-list a:hover, .active {
+      background: #3498db;
+    }
+    header {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .profile-img {
+      display: block;
+      margin: 20px auto;
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    section {
+      text-align: center;
+      max-width: 600px;
+      margin: auto;
+    }
+    @media (max-width: 768px) {
+      .nav-list { flex-direction: column; align-items: center; }
+      .profile-img { width: 140px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul class="nav-list">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="what-i-do.html">What I Do</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Hello, I'm [ROEMO MONDOL]</h1>
+  <p>NETWORK ADMISTATOR & Creative Thinker</p>
+</header>
+
+<img src="profile.jpg" alt="My Photo" class="profile-img" />
+
+<section>
+  <h2>Welcome</h2>
+  <p>Thanks for visiting my portfolio. Use the menu above to explore more about me!</p>
+</section>
+
+</body>
+</html>
