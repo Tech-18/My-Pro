@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; color: #333; }
+    nav { background: #222; padding: 12px; border-radius: 6px; margin-bottom: 30px; }
+    .nav-list {
+      display: flex; justify-content: center; list-style: none; gap: 20px;
+    }
+    .nav-list a {
+      color: white; text-decoration: none; padding: 8px 14px; border-radius: 4px;
+    }
+    .nav-list a:hover, .active { background: #3498db; }
+
+    h1 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
+
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2c80b4;
+    }
+
+    @media (max-width: 768px) {
+      .nav-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="what-i-do.html">What I Do</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>Contact Me</h1>
+
+<div class="form-container">
+  <form action="mondolromeo2@gmail.com" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Your Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Your Message:</label>
+    <textarea name="message" rows="6" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+</body>
+</html>
